@@ -69,6 +69,20 @@ margin-left: 130px;
 
 }
 
+.bi-box-arrow-in-right {
+
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.bi-cart4 {
+
+padding: 5px;
+margin: 5px
+
+}
+
 .contenedorSuperior nav ul li a {
 
     text-decoration: none;
@@ -79,7 +93,8 @@ font-size: smaller;
 .barrasuperior {
 
 font-family: pretorian;
-font-weight: lighter;
+font-family: Tahoma, sans-serif;
+font-weight: bold;
 display: flex;
 text-decoration: none;
 padding: 10px;
@@ -127,6 +142,7 @@ margin: 20px;
 
  
     display: flex;
+
     align-items: flex-end;
     justify-content: center;
     gap: 10px;
@@ -170,20 +186,66 @@ margin-bottom: 5px;
     display: grid;
     justify-items: center;
     width: 80%;
-    margin-left: 130px;
+    margin-left: 90px;
+   
 }
 
 .carousel-inner {
 
     border: 6px solid rgb(105, 26, 16);
     width: 100%;
-    height: 85%;
+    height: 87%;
     object-fit: cover;
     margin-bottom: 50px;
 
 }
 
+/* Cards */
 
+.contenerdor-productos {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:1rem;
+
+}
+
+.card {
+
+}
+
+.card-img-top {
+
+
+}
+
+.card-body {
+
+background-color: rgb(252, 206, 81);
+
+}
+
+.card-title {
+
+font-size: 1.5rem;
+font-weight: 700;
+text-align: center;
+
+}
+
+.card-text {
+
+
+
+}
+
+
+.a {
+
+background-color: rgb(105, 26, 16);
+
+    
+}
 
 /* footer */
 
@@ -220,7 +282,6 @@ h2 {
 }
 
 
-
 .redes {
 
     font-family: pretorian;
@@ -230,9 +291,3 @@ h2 {
     font-style: normal;
 }
 
-/* Cards */
-
-.card-img-top {
-
-
-}
