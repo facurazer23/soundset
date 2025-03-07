@@ -109,6 +109,12 @@ font-size: smaller;
 
 }
 
+.contenedorSuperior nav ul li a:hover { 
+
+    transition: all 2s ease;
+    background-color: rgba(105, 26, 16, 0.301);
+}
+
 .barrasuperior {
 
 font-family: pretorian;
@@ -151,7 +157,7 @@ margin: 20px;
     font-family: pretorian;
     font-weight: 1000;
     font-style: lighter;
-    color: var(--clr-main);
+    color: rgb(105, 26, 16);
     text-align: center;
 
 }
@@ -184,15 +190,14 @@ margin-bottom: -15px;
     font-size:large;
     list-style: none;
     text-decoration: none;
-    color: var(--clr-main);
+    color: rgb(105, 26, 16);
     margin-left: 20px;
 }
 
 .navbar li:hover {
 
-border-bottom: solid 2px rgb(105, 26, 16);
-margin-top: -5px;
-position:sticky;
+transition: all 1s ease;
+background-color: rgba(105, 26, 16, 0.308);
 
 }
 
@@ -238,7 +243,6 @@ position:sticky;
     gap: 20px;
   
 }
-
 
 
 .product-conteiner {
