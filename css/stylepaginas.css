@@ -41,7 +41,7 @@ a {
 
 }
 
-/* Estilo Titulos */
+/* -------------------- Estilo Titulos ------------------------ */
 
 .Titulo {
     font-family: pretorian;
@@ -51,7 +51,7 @@ a {
     
     }
       
-    
+
     .descripciontitulo{
         font-family: "Kanit", serif;
         font-weight: 400;
@@ -69,18 +69,19 @@ a {
     
     }
     
-    .indice-lateral{
+    /*--------------------- Estilos Párrafos -------------------- */
     
-        margin-left: 15px;
-        padding: 5px;
-        text-decoration: none;
-        color: black;
-        font-family: "DM Sans", sans-serif;
+    
+    .descripcionparrafo{
+            
+        font-family: "DM Sans", serif;
+        font-weight: 200;
+        font-style: initial;
         
-    }
+        }
+
     
-    
-    /* Header, contenedor superior, barra de busqueda y de articulos */
+    /* ----- Header, contenedor superior, barra de busqueda y de articulos -------- */
     
     .contenedorSuperior {
     
@@ -177,7 +178,8 @@ a {
     
     }
     
-    
+    /*  ------------------- NAVBAR --------------------- */
+
     .navbar {
     
         display: flex;
@@ -185,8 +187,6 @@ a {
         justify-content: center;
         gap: 10px;
         
-    
-    
     }
     
     .navbar li {
@@ -194,7 +194,6 @@ a {
     display: inline-block;
     padding: 20px;
     margin-bottom: -15px;
-    
     
     }
     
@@ -217,18 +216,10 @@ a {
     }
     
     
-    /* Estilos Párrafos */
-    
-    
-    .descripcionparrafo{
-        font-family: "DM Sans", serif;
-        font-weight: 200;
-        font-style: initial;
-    
-    }
+ /* ----------------------- MAIN ---------------------------------- */
+ 
 
-
-    main {
+    .wrapper {
 
         display: grid;
         grid-template-columns: 20% 1fr;
@@ -243,13 +234,21 @@ a {
       margin-top: -5px;
     }
 
+
+    /* ----- FILTROS ---- */
+
     .indice-lateral{
 
         margin-top: 5px;
         margin-bottom: 50px;
         margin-left: 30px;
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+        font-family: "DM Sans", sans-serif;
+        
     }
-
+    
     
     .filtro-aside{
         
@@ -293,6 +292,8 @@ a {
 
     }
 
+    /* --------------- CARDS CONTAINER --------------- */
+
     .product-conteiner {
 
         display: grid;
@@ -334,7 +335,7 @@ a {
     
         width: 100%;
         height: 180px;
-        object-fit:contain;
+        object-fit: contain;
        padding-left: 10px;
         padding-right: 10px;
 
@@ -409,7 +410,7 @@ a {
     }
 
 
-    /* footer */
+    /* ------------------------------ FOOTER --------------------------- */
 
 .footer-container {
 
@@ -492,7 +493,7 @@ background-color: rgba(87, 135, 224, 0.5)
 }
 
 
-/* --------------MEDIAQUERIES------------------- */
+/* ---------------------- MEDIAQUERIES ------------------------ */
 
 
 
@@ -555,64 +556,68 @@ background-color: rgba(87, 135, 224, 0.5)
 
 @media (max-width: 480px) {
 
-    .filtros{
 
-        display: flex;
-        flex-direction: row;
-        margin-top: 0px;
-        margin-left: 25px;
-        gap: 10px;
-        width: 40vh;
-        height: 75vh;
-        align-items:first baseline;
-        background-color: #4c90dd96;
-        border-radius: 20px;
+    .logo {
+    
+        margin-left: 20px;
 
     }
 
-    .filtros p{
+    .buscarbtn {
+    
+        display: flex;
+        border-radius: 7px;
+        border: 5px rgb(105, 26, 16) solid;
+        margin: 20px;
+    
+    }
 
-        margin-left: 50px;
-        margin-top: 10px;
+    .navbar {
+
+        flex-direction: column;
+        align-items:center;
+
         
     }
 
-    .filtros a{
-    color: black;
-    margin-bottom: 5px;
-
-    }
-
-    .filtros h6{
-
-        font-size: larger;
-        font-weight: 800;
-        margin-bottom: 8px;
-
-    }
-
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .navbar li {
+
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 30px;
+        margin-right: 30px;
     }
 
-    .product-conteiner {
-        grid-template-columns: 1fr;
-    }
 
-    .filtro-aside {
-        display: none; /* Oculta el aside en pantallas pequeñas */
-    }
 
-    .footer-links {
-        width: 100%;
-        text-align: center;
-    }
+.wrapper {
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.filtro-aside{
+
+    margin: 10px;
+    margin-bottom: 70px;
+}
+
+main, .contenedorSuperior, .navbar, .barradebusqueda, .product-conteiner {
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.product-conteiner{
+
+    margin-left: 5px;
+}
+
+.footer-links {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
 }

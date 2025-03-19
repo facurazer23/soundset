@@ -40,7 +40,7 @@ a {
    margin-top: 30px;
 
 }
-/* Estilo Titulos */
+/* ---------------------- Estilo Titulos ---------------------- */
 
 .Titulo {
     font-family: pretorian;
@@ -69,7 +69,7 @@ a {
     }
     
     
-    /* Header, contenedor superior, barra de busqueda y de articulos */
+    /* -------- Header, contenedor superior, barra de busqueda y de articulos ---------------- */
     
     .contenedorSuperior {
     
@@ -120,9 +120,11 @@ a {
         background-color: rgba(105, 26, 16, 0.301);
     }
     
+    /* ------------------- Login y Carrito -------------------- */
+
     .barrasuperior {
     
-    font-family: pretorian;
+
     font-family: Tahoma, sans-serif;
     font-weight: bold;
     display: flex;
@@ -133,6 +135,8 @@ a {
     gap: auto;
     
     }
+
+    /* ------------ Barra de búsqueda ------------------- */
     
     .barradebusqueda {
     
@@ -158,23 +162,14 @@ a {
         margin: 5px;
     }
     
-    .Buscar-Articulos{
-    
-        font-family: pretorian;
-        font-weight: 1000;
-        font-style: lighter;
-        color: rgb(105, 26, 16);
-        text-align: center;
-    
-    }
-    
+    /*------------------------ Navbar ------------------------ */
     
     .navbar {
     
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        margin-left: 10px;
+        margin-left: 30px;
         gap: 5px;
         
     
@@ -213,8 +208,20 @@ a {
     
     }
     
+    /* -------------------- Articulos destacados ------------------ */
+
+
+    .Buscar-Articulos{
     
-    /* Estilos Párrafos */
+        font-family: pretorian;
+        font-weight: 1000;
+        font-style: lighter;
+        color: rgb(105, 26, 16);
+        text-align: center;
+    
+    }
+    
+    /* ------------------- Estilos Párrafos ---------------------- */
     
     
     .descripcionparrafo{
@@ -225,7 +232,7 @@ a {
     }
 
 
-/* Carousel */
+/* -------------------------- Carousel ------------------------------ */
 
 .carouselContainer {  
     
@@ -247,7 +254,7 @@ a {
 
 }
 
-/* productos */
+/* ---------------------- productos ----------------------------- */
 
 .product-conteiner {
 
@@ -362,7 +369,7 @@ a {
 }
   
 
-/* footer */
+/* ----------------------- footer --------------------------- */
 
 .footer-container {
 
@@ -446,12 +453,21 @@ background-color: rgba(87, 135, 224, 0.5)
 
 
 
-/* --------------MEDIAQUERIES------------------- */
+/* --------------------- MEDIAQUERIES ----------------------- */
 
 
 
 
 @media (max-width: 768px) {
+
+
+    * {
+
+        padding: 0;
+        margin: 0%;
+        box-sizing: border-box;
+    
+    }
 
     .contenedorSuperior {
         flex-direction: column;
@@ -461,7 +477,6 @@ background-color: rgba(87, 135, 224, 0.5)
     }
 
     .Titulo {
-
 
         margin-right: 100px;
     }
@@ -508,24 +523,68 @@ background-color: rgba(87, 135, 224, 0.5)
 
 
 
-
-
-
 @media (max-width: 480px) {
 
+    html, body {
+
+    width: 100%;
+    overflow-x: hidden;
+
+    }
+
+
+    .barrasuperior {
+    
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+        
+    }
+
+
+    .logo {
+    
+        margin-left: 20px;
+
+    }
+
+    .buscarbtn {
+    
+        display: flex;
+        border-radius: 7px;
+        border: 5px rgb(105, 26, 16) solid;
+        margin: 20px;
+    
+    }
+
     .navbar {
+
         flex-direction: column;
-        align-items: center;
+        align-items:center;
+
     }
 
     .navbar li {
+
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 20px;
+        margin-right: 40px;
     }
 
+    main, .contenedorSuperior, .navbar, .barradebusqueda, .product-conteiner {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+
+
     .product-conteiner {
+
         grid-template-columns: 1fr;
+       
     }
 
     .filtro-aside {
@@ -536,6 +595,8 @@ background-color: rgba(87, 135, 224, 0.5)
         width: 100%;
         text-align: center;
     }
+
+
 }
 
     
