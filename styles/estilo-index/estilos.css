@@ -1,0 +1,295 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "pretorian";
+  src: url(/recursos/fuentes/pretoriaregular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-soundset, .carouselContainer, .contenedorSuperior .barrasuperior, .contenedorSuperior {
+  display: flex;
+  align-items: center;
+}
+
+.contenedorSuperior {
+  margin-top: 5px;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  justify-content: space-between;
+  color: black;
+  text-decoration: none;
+}
+.contenedorSuperior h1 {
+  margin-left: 10px;
+  font-family: "pretorian";
+  color: #691a10;
+}
+.contenedorSuperior .barrasuperior {
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0px;
+  margin: auto;
+  gap: auto;
+}
+.contenedorSuperior nav ul li a {
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  color: #691a10;
+  font-size: bold;
+  font-weight: bold;
+  gap: 15px;
+  margin: 10px;
+  margin-right: 25px;
+}
+.contenedorSuperior .bi-box-arrow-in-right {
+  padding: 5px;
+  margin: 5px;
+}
+.contenedorSuperior .bi-cart4 {
+  padding: 5px;
+  margin: 5px;
+}
+
+/* ------------ Barra de búsqueda ------------------- */
+.barradebusqueda {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.barradebusqueda .inputbuscar {
+  width: 750px;
+  margin-left: 8%;
+}
+.barradebusqueda .buscarbtn {
+  display: flex;
+  border-radius: 7px;
+  border: 5px #691a10 solid;
+  margin: 5px;
+}
+
+/*------------------------ Navbar ------------------------ */
+.navbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-left: 30px;
+  gap: 5px;
+}
+.navbar li {
+  display: inline-block;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: -15px;
+}
+.navbar a {
+  font-family: "pretorian";
+  font-weight: 400;
+  font-size: large;
+  list-style: none;
+  text-decoration: none;
+  color: #691a10;
+  display: inline-block;
+  padding: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -------------------------- Carousel ---------------------------- */
+.card-soundset, .carouselContainer, .contenedorSuperior, .contenedorSuperior .barrasuperior {
+  display: flex;
+  align-items: center;
+}
+
+.carouselContainer {
+  width: 80%;
+  margin-left: 140px;
+  margin-top: 35px;
+}
+.carouselContainer .carousel-inner {
+  border: 6px solid #691a10;
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 50px;
+}
+
+/* -------------------- cards/productos ---------------------- */
+.product-conteiner {
+  display: grid;
+  grid-template-columns: repeat 4, 1fr;
+  justify-content: center;
+  gap: 20px;
+  width: 190vh;
+  margin-left: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.card-soundset {
+  width: 280px;
+  height: 450px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid #691a10;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-cuerpo {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-price {
+  text-align: center;
+  padding: 5px;
+}
+
+.card-title {
+  font-size: 800;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px;
+}
+
+.payment-method {
+  margin: 10px 0;
+  color: green;
+}
+
+.payment-option {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.payment-option i {
+  width: 18px;
+  height: 35px;
+  position: relative;
+}
+
+.card-soundset .btn {
+  background-color: #691a10;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+.card-soundset .btn:hover {
+  background-color: white;
+  color: black;
+  border: solid 2px #691a10;
+}
+
+ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+body {
+  background: linear-gradient(80deg, #fa7744, #5787e0);
+}
+
+/* -------------------- Articulos destacados ------------------ */
+.Buscar-Articulos {
+  font-family: "pretorian";
+  font-weight: 1000;
+  font-style: lighter;
+  color: #691a10;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  width: 25%;
+  padding: 15px;
+}
+
+.footer-links h4 {
+  font-family: pretorian;
+  color: rgb(105, 26, 16);
+  font-weight: lighter;
+  text-decoration: none;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  margin-left: -30px;
+}
+
+footer ul li a:hover {
+  color: rgb(105, 26, 16);
+  padding-left: 6px;
+}
+
+.social-links a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+  background-color: rgba(87, 135, 224, 0.5);
+}
+
+.footer p {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-style: initial;
+  margin: 30px;
+  margin-left: 5px;
+}/*# sourceMappingURL=estilos.css.map */

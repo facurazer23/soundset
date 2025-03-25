@@ -1,0 +1,21 @@
+// colores
+
+$bg-gradient: linear-gradient(80deg, #fa7744, #5787e0);
+$primaryColor: #691a10;
+$secondaryColor: #fa7744;
+$fontTitle: pretorian;
+$primaryColorHover: #691a102a;
+
+// fuentes
+
+@font-face {
+    font-family: "pretorian";
+    src: url(/recursos/fuentes/pretoriaregular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+$fontPrimary: 'pretorian';
+$fontSecundary: 'DM Sans', sans-serif;
+
+

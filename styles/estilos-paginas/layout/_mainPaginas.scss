@@ -1,0 +1,163 @@
+ /* ----------------------- MAIN ---------------------------------- */
+
+ .wrapper {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 10px;
+   
+}
+
+.titulo-arts{
+  margin-left: 10vh;
+  margin-top: -5px;
+}
+
+
+/* ----- FILTROS ---- */
+
+.indice-lateral{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: "DM Sans", sans-serif;
+    
+}
+
+.filtro-aside{
+    width: 250px;
+
+
+    .filtros{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 25px;
+        gap: 10px;
+        width: 40vh;
+        height: 75vh;
+        align-items:baseline;
+        background-color: #4c90dd96;
+        border-radius: 20px;
+    
+
+        p{
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        
+        h6{
+            font-size: larger;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+    }
+
+    .filtros a{
+        margin-bottom: 5px;
+        color: black;
+        }
+
+} 
+
+/* --------------- CARDS CONTAINER --------------- */
+
+.product-conteiner {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    justify-content: center;
+    gap: 20px;
+    width: 150vh;
+    margin-left: 10vh;
+}
+
+.product-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: baseline;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+
+.card-soundset {
+    width: 280px; 
+    height: 450px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+   padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-cuerpo {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-price {
+    text-align: center;
+    padding: 5px;
+}
+
+.card-title {
+    font-size: 800;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+}
+
+.payment-method {
+    margin: 10px 0;
+    color: green;
+}
+
+.payment-option {
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    gap: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.payment-option i {
+    width: 18px;
+    height: 35px;
+    position: relative;
+}
+
+
+.card-soundset .btn {
+    background-color: $primaryColor;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: aliceblue;
+
+}
+
+.card-soundset .btn:hover { 
+    background-color: white;
+    color: black;
+    border:solid 2px $primaryColor;
+
+}
