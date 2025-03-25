@@ -145,7 +145,16 @@
   overflow: hidden;
   background: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
 }
+
+
+.card-soundset:hover{
+  
+  box-shadow: rgba(77, 12, 3, 0.692) 0px 5px, rgba(77, 12, 3, 0.692) 0px 10px, rgba(77, 12, 3, 0.692) 0px 15px, rgba(77, 12, 3, 0.692) 0px 20px, rgba(77, 12, 3, 0.692) 0px 25px;
+  transition: all .3s;
+}
+
 
 .card-img {
   width: 100%;
