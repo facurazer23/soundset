@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "pretorian";
-  src: url(../recursos/fuentes/pretoriaregular.ttf);
+  font-family:"pretorian";
+  src: url(/recursos/fuentes/pretoriaregular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .contenedorSuperior .barrasuperior, .contenedorSuperior {
