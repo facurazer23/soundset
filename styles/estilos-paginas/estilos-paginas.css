@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "pretorian";
-  src: url(/recursos/fuentes/pretoriaregular.ttf) format('truetype');
+  src: url(../estilos-paginas/fuentes/pretoriaregular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
