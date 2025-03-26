@@ -310,6 +310,7 @@ footer ul li a:hover {
 
 @media (max-width: 768px) {
 
+
   * {
 
       padding: 0;
@@ -327,7 +328,7 @@ footer ul li a:hover {
 
   .Titulo {
 
-      margin-left: 60px;
+      margin-right: 100px;
   }
 
   .logo {
@@ -397,6 +398,11 @@ footer ul li a:hover {
 
   }
 
+ .Titulo {
+
+  margin-right: -25px;
+ }
+
   .buscarbtn {
   
       display: flex;
@@ -443,5 +449,6 @@ footer ul li a:hover {
       width: 100%;
       text-align: center;
   }
+
 
 }
