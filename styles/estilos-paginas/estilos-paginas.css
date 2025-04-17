@@ -1,16 +1,16 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "pretorian";
-  src: url(../estilos-paginas/fuentes/pretoriaregular.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "pretorian";
+  src: url(./fuentes/pretoriaregular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .contenedorSuperior .barrasuperior, .contenedorSuperior {
   display: flex;
   align-items: center;
@@ -133,7 +133,7 @@ body {
 .Titulo {
   font-family: "pretorian";
   font-weight: lighter;
-  color: rgb(105, 26, 16);
+  color: #691a10;
   font-size: 50px;
 }
 
@@ -147,7 +147,7 @@ body {
   font-family: "pretorian";
   font-weight: 800;
   font-style: lighter;
-  color: rgb(105, 26, 16);
+  color: #691a10;
   margin: 20px;
   padding: 10px;
 }
@@ -164,7 +164,7 @@ body {
   margin-top: -5px;
 }
 
-/* ----- FILTROS ---- */
+/* ---------------------------- FILTROS --------------------------- */
 .indice-lateral {
   margin-top: 5px;
   margin-bottom: 50px;
@@ -204,7 +204,7 @@ body {
   color: black;
 }
 
-/* --------------- CARDS CONTAINER --------------- */
+/* --------------- CARD CONTAINER --------------- */
 .product-conteiner {
   display: grid;
   grid-template-columns: repeat 4, 1fr;
@@ -222,8 +222,7 @@ body {
   margin-bottom: 2rem;
   margin-left: 3rem;
 }
-
-.card-soundset {
+.product-conteiner .card-soundset {
   width: 280px;
   height: 450px;
   display: flex;
@@ -236,8 +235,7 @@ body {
   background: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.card-img {
+.product-conteiner .card-img {
   width: 100%;
   height: 180px;
   -o-object-fit: contain;
@@ -245,31 +243,26 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-
-.card-cuerpo {
+.product-conteiner .card-cuerpo {
   width: 100%;
   padding: 15px;
   text-align: center;
 }
-
-.card-price {
+.product-conteiner .card-price {
   text-align: center;
   padding: 5px;
 }
-
-.card-title {
+.product-conteiner .card-title {
   font-size: 800;
   font-weight: 700;
   text-align: center;
   padding: 5px;
 }
-
-.payment-method {
+.product-conteiner .payment-method {
   margin: 10px 0;
   color: green;
 }
-
-.payment-option {
+.product-conteiner .payment-option {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -277,14 +270,12 @@ body {
   margin-left: 10px;
   margin-top: 5px;
 }
-
-.payment-option i {
+.product-conteiner .payment-option i {
   width: 18px;
   height: 35px;
   position: relative;
 }
-
-.card-soundset .btn {
+.product-conteiner .card-soundset .btn {
   background-color: #691a10;
   display: block;
   width: 100%;
@@ -293,14 +284,7 @@ body {
   border-radius: 5px;
   color: aliceblue;
 }
-
-.card-soundset:hover{
-  
-  box-shadow: rgba(77, 12, 3, 0.692) 0px 5px, rgba(77, 12, 3, 0.692) 0px 10px, rgba(77, 12, 3, 0.692) 0px 15px, rgba(77, 12, 3, 0.692) 0px 20px, rgba(77, 12, 3, 0.692) 0px 25px;
-  transition: all .3s;
-}
-
-.card-soundset .btn:hover {
+.product-conteiner .card-soundset .btn .card-soundset .btn:hover {
   background-color: white;
   color: black;
   border: solid 2px #691a10;
@@ -320,7 +304,7 @@ body {
 }
 
 .footer-links h4 {
-  font-family: pretorian;
+  font-family: "pretorian";
   color: #691a10;
   font-weight: lighter;
   text-decoration: none;
@@ -345,14 +329,20 @@ footer ul li a:hover {
 }
 
 .social-links a {
-  display: inline-block;
-  min-height: 40px;
-  width: 40px;
-  margin: 0 10px 10px 0;
+  display: column;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
   transition: all 0.5s ease;
+}
+
+.social-links h5{
+  font-family: "DM Sans", serif;
+  display: column;  
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-top: -33px; 
+
 }
 .social-links a .social-links a:hover {
   background-color: rgba(87, 135, 224, 0.5);
@@ -364,163 +354,185 @@ footer ul li a:hover {
   font-style: initial;
   margin: 30px;
   margin-left: 5px;
-}/*# sourceMappingURL=estilos-paginas.css.map */
-
-
-
-/* ---------------------- MEDIAQUERIES ------------------------ */
-
-@media (max-width: 768px) {
-
-  .contenedorSuperior {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-right: 40px;
   }
 
-  .Titulo {
 
-      margin-right: 3%;
-  }
 
-  .logo {
-      margin: 10px 0;
-  }
+/* --------------- MEDIAQUERIES ---------------------- */
 
-  .barradebusqueda {
-      flex-direction: column;
-      align-items: center;
-  }
 
-  .inputbuscar {
-      width: 90%;
-  }
+    
+  @media (max-width: 768px) {
 
-  .product-conteiner {
-      grid-template-columns: repeat(2, 1fr);
-      width: 100%;
-      margin-left: 0;
-  }
+  
 
-  .card-soundset {
-      width: 100%;
-      max-width: 300px;
-  }
+    .contenedorSuperior {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 40px;
+    }
 
-  .carouselContainer {
-      width: 95%;
-      margin-left: auto;
-      margin-right: auto;
-  }
+    .Titulo {
 
-  .footer-row {
-      flex-direction: column;
-      text-align: center;
-  }
 
-  .footer-links {
-      width: 100%;
-  }
+        margin-right: 100px;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    .barradebusqueda {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputbuscar {
+        width: 90%;
+    }
+
+    .product-conteiner {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card-soundset {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .carouselContainer {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
 }
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-  }
+  * {
 
-  .logo {
-  
-      margin-left: 20px;
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
 
-  }
+    }
 
   .Titulo {
-    margin-right: 3%;
+
+    margin-right: 0%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    }
+
+    .logo {
+    margin: 10px -10px;
+
+    }
+
+    .contenedorSuperior {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-right: 30px;
   }
 
-  .barrasuperior {
-  
+  .contenedorSuperior ul{
+
     display: flex;
-    align-items: center;
-    padding: 20px;
-    gap: 50px;
+    flex-direction:row;
+    margin-right: 50px;
+    margin: 20px;
+    margin-bottom: 50px;
+   
+  }
+
+
+    .buscarbtn {
+    
+        display: flex;
+        border-radius: 7px;
+        border: 5px rgb(105, 26, 16) solid;
+        margin: 20px;
+    
+    }
+
+    .navbar {
+
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10%;
+  
         
     }
 
-  .buscarbtn {
-  
-      display: flex;
-      border-radius: 7px;
-      border: 5px rgb(105, 26, 16) solid;
-      margin: 20px;
-  
-  }
+    .navbar li {
 
-  .navbar {
-
-      flex-direction: column;
-      align-items:center;
-
-      
-  }
-
-  .navbar li {
-
-      flex-direction: column;
-      align-items: center;
-      padding: 30px;
-      margin-right: 30px;
-  }
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        gap: -10px;
+    }
 
 
 
 .wrapper {
 
-  display: grid;
-  grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 
 .filtro-aside{
 
-  margin: 10px;
-  margin-bottom: 70px;
+    margin: 10px;
+    margin-bottom: 70px;
+    margin-left: 10%;
+
 }
 
 main, .contenedorSuperior, .navbar, .barradebusqueda, .product-conteiner {
-  max-width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .product-conteiner{
 
-  margin-left: 5px;
+    margin-left: 5px;
 }
 
-
-.footer-container{
-
-flex-direction: column;
-
-}
-
-.footer-row {
-  
-  align-items: center;
-  justify-content:flex-start;
-  text-align: center;
-}
 
 .footer-links {
 
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40%;
+
 }
 
+.social-links h5{
+
+margin: 10px 20px;
+}
 
 }
+
+/*# sourceMappingURL=estilos-paginas.css.map */

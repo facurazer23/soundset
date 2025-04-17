@@ -4,11 +4,6 @@
 
 }
 
-.logo {
-    @include mobile {
-        margin-left:20px; 
-}
-}
 
 .contenedorSuperior { 
         @extend %flexCenter;
@@ -67,10 +62,8 @@
         
         }
 
-
-
-        
-                /* ------------ Barra de búsqueda ------------------- */
+    
+        /* ------------ Barra de búsqueda ------------------- */
     
 
     .barradebusqueda {
@@ -90,13 +83,6 @@
             border: 5px $primaryColor solid;
             margin: 5px;
 
-            @include mobile {
-                display: flex;
-                border-radius: 7px;
-                border: 5px rgb(105, 26, 16) solid;
-                margin: 20px;
-            
-            }
         }
 
         }

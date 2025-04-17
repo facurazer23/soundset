@@ -40,7 +40,7 @@ body{
     .Titulo {
         font-family: $fontPrimary;
         font-weight: lighter;
-        color: rgb(105, 26, 16);
+        color: $primaryColor;
         font-size: 50px;
         }
           
@@ -55,7 +55,7 @@ body{
             font-family: $fontPrimary;
             font-weight: 800;
             font-style: lighter;
-            color:rgb(105, 26, 16);
+            color: $primaryColor;
             margin: 20px;
             padding: 10px;
         
